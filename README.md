@@ -8,7 +8,7 @@
      </pre>
 Chars:  `   ~
 
-Install SCSS:
+## Install SCSS:
 	When creating new project: 		ng new My_New_Project --style=sass    
 									npm install node-sass --save-dev
 									
@@ -17,7 +17,7 @@ Install SCSS:
 									change .angular-cli.json -> "styles": ["styles.scss"]
 									
 									
-Install BOOTSTRAP:
+## Install BOOTSTRAP:
 	On existing project:			npm install ngx-bootstrap bootstrap@next jquery tether popper.js --save
 	
 	Add to style.scss:			    @import "../node_modules/bootstrap/scss/bootstrap";
@@ -29,7 +29,7 @@ Install BOOTSTRAP:
 									"../node_modules/bootstrap/dist/js/bootstrap.js"
 									
 									
-Load Settings from file:
+## Load Settings from file:
 	In app.modules.ts: 				Add this code before the @NgModule({}) declaration:
 									export function InitConfig(settings: SettingsService) { return () => settings.LoadConf();}
 									
